@@ -5,13 +5,13 @@
  * main - This prints the alphabets from a to z excluding q and e in lower case
  * return: Always 0 (correct)
  */
-int main (void )
+int main (void)
 {
 	char ch;
 
 	for (ch = 'a'; ch < 'z'; ch++)
 	{
-		if ('d' != ch != 'e' )
+		if ('q' != ch != 'e' )
 		{
 			putchar(ch);
 		}
