@@ -2,10 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 
-/** main - function that detects and prints the sign 
-* of the result of an expression
-* return: always 0 (Success)
-*/
+/** 
+ * main - function that detects and prints the sign of the
+ * result of an expression
+ * 
+ * return: Always 0
+ */ 
 int main(void)
 {
 	int n;
@@ -18,5 +20,5 @@ int main(void)
 		printf("%d is negative\n", n);
 	else
 		printf("%d is zero\n", n);
-	return(0);
+	return (0);
 }
