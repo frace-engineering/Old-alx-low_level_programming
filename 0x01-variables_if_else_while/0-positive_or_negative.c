@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-/** 
- * main - function that detects and prints the sign 
- * of the result of an expression
- * return: always 0 (Success)
- */
+/** main - function that detects and prints the sign 
+* of the result of an expression
+* return: always 0 (Success)
+*/
 int main(void)
 {
 	int n;
