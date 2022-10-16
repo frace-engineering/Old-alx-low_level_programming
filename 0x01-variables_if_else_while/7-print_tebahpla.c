@@ -2,16 +2,16 @@
 
 /**
  * main - prints the alphabets in reverse order
- * return: Always 0 (success)
+ * Return: Always 0 (success)
  */
 int main(void)
 {
 	char mine;
 
-	for  (mine = 'z'; mine >= 'a'; mine--)
+	for (mine = 'z'; mine >= 'a'; mine--)
 	{
 		putchar(mine);
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }

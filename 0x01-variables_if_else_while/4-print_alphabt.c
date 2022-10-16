@@ -3,9 +3,9 @@
 
 /**
  * main - This prints the alphabets from a to z excluding q and e in lower case
- * return: Always 0 (correct)
+ * Return: Always 0 (correct)
  */
-int main (void)
+int main(void)
 {
 	char ch = 'a';
 
@@ -17,7 +17,6 @@ int main (void)
 		}
 		ch++;
 	}
-
-	 putchar('\n');
-	 return (0);
+	putchar('\n');
+	return (0);
 }

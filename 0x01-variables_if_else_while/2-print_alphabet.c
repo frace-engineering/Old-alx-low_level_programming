@@ -3,7 +3,7 @@
 /**
  * main - this function prints out the alphabets
  * from a to z in lower case
- * return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {

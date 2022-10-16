@@ -1,8 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - This program prints out all the single digit unmbers of base 10 starting from 0
- * return: Always 0 (success)
+ * main - This program prints out all the single digit
+ * unmbers of base 10 starting from 0
+ * Return: Always 0 (success)
  */
 int main(void)
 {
