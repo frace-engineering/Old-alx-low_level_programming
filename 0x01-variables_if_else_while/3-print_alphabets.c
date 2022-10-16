@@ -2,7 +2,8 @@
 
 
 
-/** main - prints both lower and upper case 
+/** 
+ * main - prints both lower and upper case 
  * alphabets from a to z in a new line
  * return: Always 0 (passed)
  */
