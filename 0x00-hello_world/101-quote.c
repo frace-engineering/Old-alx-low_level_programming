@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <tring.h>
+#include <string.h>
 
 /**
  * main - this prints exactly "and that piece of art is useful"
