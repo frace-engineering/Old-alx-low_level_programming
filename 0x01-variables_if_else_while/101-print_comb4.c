@@ -11,18 +11,18 @@ int main(void)
 	int j;
 	int k;
 
-	for (i = 48; i <= 53; i++)
+	for (i = 48; i <= 58; i++)
 	{
-		for (j = 46; j <= 58; j++)
+		for (j = 49; j <= 58; j++)
 		{
-			for (k = 54; k < 58; k++)
+			for (k = 50; k < 58; k++)
 			{
 				if (k > j && j > i)
 				{
 					putchar(i);
 					putchar(j);
 					putchar(k);
-					if (i != 53 || j != 58)
+					if (i != 55 || j != 56)
 					{
 						putchar(',');
 						putchar(' ');
