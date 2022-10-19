@@ -1,13 +1,22 @@
 #include "main.h"
-
+#include "_putchar"
 /**
- * main - print the sring of characters
+ * main - Prints the string to the standard output
+ *
  * Return: 0 (Success)
  */
 
 int main(void)
 {
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 
-	write(1, "_putchar\n", 9);
+	_putchar('\n');
 	return (0);
 }
