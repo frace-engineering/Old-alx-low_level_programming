@@ -8,5 +8,9 @@
  */
 int _isdigit(int c)
 {
-		return (isdigit(c));
+	if (48 <= c <= 58)
+	{
+		_putchar(c);
+	}
+	return (c);
 }
