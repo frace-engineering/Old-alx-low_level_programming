@@ -1,5 +1,4 @@
 #include "main.h"
-#include "_putchar"
 /**
  * main - Prints the string to the standard output
  *
