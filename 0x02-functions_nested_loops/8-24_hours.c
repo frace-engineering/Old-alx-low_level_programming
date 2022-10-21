@@ -14,25 +14,25 @@ void jack_bauer(void)
 {
 	int i;
 
-	for (i = 0; i < 3; i++)
+	for (i = 48; i < 51; i++)
 	{
 		int j;
 
-		for (j = 0; j < 4; j++)
+		for (j = 48; j < 52; j++)
 		{
 			int k;
 
-			for (k = 0; k < 6; k++)
+			for (k = 48; k < 55; k++)
 			{
 				int l;
 
-				for (l = 0; l < 10; l++)
+				for (l = 48; l < 58; l++)
 				{
-					_putchar('i');
-					_putchar('j');
+					_putchar(i);
+					_putchar(j);
 					_putchar(':');
-					_putchar('k');
-					_putchar('l');
+					_putchar(k);
+					_putchar(l);
 				}
 				_putchar('\n');
 			}
