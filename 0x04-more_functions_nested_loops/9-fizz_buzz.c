@@ -16,19 +16,18 @@ int main(int num)
 	{
 		if ((num % 5 == 0) && (num % 3 == 0))
 		{
-			puts("FizzBuzz ");
+			printf("FizzBuzz ");
 		}
 		else if (num % 5 == 0)
 		{
-			puts("Buzz ");
+			printf("Buzz ");
 		}
 		else if (num % 3 == 0)
 		{
-			puts("Fizz ");
+			printf("Fizz ");
 		}
 		else
 			printf("%d ", num);
-			fflush(stdout);
 	}
 	return (0);
 }
