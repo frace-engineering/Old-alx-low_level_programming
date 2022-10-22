@@ -10,7 +10,7 @@ int main(void)
 {
 	int i;
 
-	/*printf("Infinite loop incomming :(\n");*/
+	printf("Infinite loop incomming :\n");
 
 	i = 0;
 
@@ -18,7 +18,7 @@ int main(void)
 	{
 		putchar(i);
 	}
-	printf("Infinte loop anoided! \\0/\n");
+	printf("Infinte loop avoided! \\0/\n");
 
 	return (0);
 }
