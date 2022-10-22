@@ -4,28 +4,18 @@
  * jack_bauer - prints every minute of the day of Jack Bauer,
  * starting from 00:00 to 23:59
  *
- * @i: integer number
- * @j: integer number
- * @k: integer number
- * @l: integer number
  * Return: void
  */
 void jack_bauer(void)
 {
-	int i;
+	int i, j, k, l;
 
 	for (i = 0; i < 3; i++)
 	{
-		int j;
-
-		for (j = 0; j < 4; j++)
+		for (j = 0; j < 10; j++)
 		{
-			int k;
-
 			for (k = 0; k < 6; k++)
 			{
-				int l;
-
 				for (l = 0; l < 10;  l++)
 				{
 					_putchar(i + '0');
@@ -33,8 +23,9 @@ void jack_bauer(void)
 					_putchar(':');
 					_putchar(k + '0');
 					_putchar(l + '0');
-
 					_putchar('\n');
+					if (i == 2 && j == 3 && k == 5  && l == 9)
+						return (0);
 				}
 			}
 		}
