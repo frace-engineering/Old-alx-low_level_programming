@@ -1,22 +1,18 @@
-nclude <stdio.h>
+#include <stdio.h>
 
 
 
 /**
- *
- * * main - causes an infinite loop
- *
- * * Return: 0
- *
- * */
-
-nt main(void)
+ * main - causes an infinite loop
+ * Return: 0
+ */
+int main(void)
 {
 	int i;
 
-	printf("Infinite loop incomming :(\n");
+	/*printf("Infinite loop incomming :(\n");*/
 
-	i =0;
+	i = 0;
 
 	/*while (1 < 10)*/
 	{
@@ -24,6 +20,6 @@ nt main(void)
 	}
 	printf("Infinte loop anoided! \\0/\n");
 
-	return (0)
+	return (0);
 }
 
