@@ -6,12 +6,12 @@
  * if number is multiple of 3, print Fizz, print FizzBuzz if number is a
  * multiple of 3 and 5 else print number.
  *
- * @num: is the range of numbers from 1 - 100.
- *
- * Return: num
+ * Return: Always 0
  */
-int main(int num)
+int main(void)
 {
+	int num;
+
 	for (num = 1; num <= 100; num++)
 	{
 		if ((num % 5 == 0) && (num % 3 == 0))
@@ -29,5 +29,6 @@ int main(int num)
 		else
 			printf("%d ", num);
 	}
+	printf("\n");
 	return (0);
 }
