@@ -1,8 +1,10 @@
 #ifndef MAIN_H
 #define main_H
 
-postitive_or_negative();
+#include <stdio>
 
-print_remaining_days();
+void postitive_or_negative(int i);
+
+void print_remaining_days(void);
 
 #endif
