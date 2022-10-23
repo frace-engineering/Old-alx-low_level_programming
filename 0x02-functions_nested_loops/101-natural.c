@@ -19,7 +19,7 @@ int main(void)
 			sum += i;
 		}
 	}
-	printf("%d is the sum of the multiples of 3 and 5 in 1024\n", sum);
+	printf("%d\n", sum);
 
 	return;
 }
