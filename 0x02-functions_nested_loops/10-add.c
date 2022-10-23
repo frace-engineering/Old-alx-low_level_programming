@@ -15,7 +15,7 @@ int add(int n, int m)
 	sum = n + m;
 
 	_putchar(sum / 10 + '0');
-	_putchar(sum % 10 + '0');
+	_putchar(sum % 10);
 	_putchar('\n');
 	return (0);
 }
