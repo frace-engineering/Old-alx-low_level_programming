@@ -20,4 +20,6 @@ int main(void)
 		}
 	}
 	printf("%d is the sum of the multiples of 3 and 5 in 1024\n", sum);
+
+	return;
 }
