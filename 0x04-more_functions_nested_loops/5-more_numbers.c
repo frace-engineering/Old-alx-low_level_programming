@@ -5,7 +5,7 @@
  * followed by a new line
  *
  * Return: void
- * 
+ *
  */
 
 void more_numbers(void)
@@ -14,12 +14,17 @@ void more_numbers(void)
 
 	for (i = 0; i < 10; j++)
 	{
-		for (j = 0; j < 15; j++)
+		for (j = 0; j <= 14; j++)
 		{
-			if (j >= 10)
-
+			if (j < 10)
+			{
+				_putchar(j + '0');
+			}
+			else if (j >= 10)
+			{
 				_putchar(j / 10 + '0');
-
+				_putchar(j % 10 + '0');
+			}
 			_putchar('\n');
 		}
 	}
