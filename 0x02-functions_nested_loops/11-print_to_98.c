@@ -21,7 +21,7 @@ void print_to_98(int n)
 			printf("%d\n", i);
 		}
 	}
-	for (i = n; i >= 98; i--)
+	for (i = n; i > 98; i--)
 	{
 		if (i > 98)
 		{
