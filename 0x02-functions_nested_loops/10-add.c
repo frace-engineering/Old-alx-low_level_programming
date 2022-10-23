@@ -10,18 +10,10 @@
 
 int add(int n, int m)
 {
-	int addnum;
+	int sum;
 
-	addnum = n + m;
+	sum = n + m;
 
-	if (addnum > 9)
-	{
-		_putchar((addnum / 10) + '0');
-		_putchar((addnum % 10) + '0');
-	}
-	else
-	{
-		_putchar(addnum + '0');
-	}
+	_putchar(sum + '0');
 	return (0);
 }
