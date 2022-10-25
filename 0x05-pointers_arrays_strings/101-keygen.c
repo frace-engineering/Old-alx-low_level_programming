@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -23,8 +24,8 @@ int main(void)
 		if ((a + b) > 2772)
 			break;
 		b = a + b;
-		printf("%b", a);
+		printf("%d", a);
 	}
-	printf("%b\n", (2772 - a));
+	printf("%d\n", (2772 - a));
 	return (0);
 }
