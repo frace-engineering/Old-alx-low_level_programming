@@ -1,31 +1,56 @@
-
 #include <stdio.h>
+#include <math.h>
 #include <stdlib.h>
 #include <time.h>
+#include "main.h"
 
 /**
  * main - generates geygen.
+ * @N: the desired length og the password
  * Return: Always 0
  */
 
-int main(void)
+int password_gen(int N)
 {
-	int a;
-	int b;
+	int i = 0;
 
-	a = 0;
-	b = 0;
-	time_t t;
+	int random = 0;
 
-	srand((unsigned int) time(&t));
-	while (b < 2772)
+	srand((unsigned int)(time(NULL)));
+	char num[] = "0123456789";
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+	char ALPHA[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char symbole[] = "!@#$^&*?";
+
+	char password[N];
+
+	random = rand() % 4;
+
+	for (i = 0; i < N; i++)
 	{
-		a = rand() % 128;
-		if ((a + b) > 2772)
-			break;
-		b = a + b;
-		printf("%d", a);
+		if (random == 1)
+		{
+			password[i] = num[rand() % 10];
+			random = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else if (random == 2)
+		{
+			password[i] = symbole[rand() % 8];
+			random = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else if (random == 3)
+		{
+			password[i] = alpha[rand() % 26];
+			random = rand() % 4;
+			printf("%c", password[i]);
+		}
+		else
+		{
+			password[i] = ALPHA[rand() % 26];
+			random = rand() % 4;
+			printf("%c", password[i]);
+		}
 	}
-	printf("%d\n", (2772 - a));
-	return (0);
 }
