@@ -10,6 +10,14 @@
  * Return: Always 0
  */
 
+int password_gen(int N);
+
+int main(void)
+{
+	password_gen(8);
+	return (0);
+}
+
 int password_gen(int N)
 {
 	int i = 0;
@@ -50,7 +58,7 @@ int password_gen(int N)
 		{
 			password[i] = ALPHA[rand() % 26];
 			random = rand() % 4;
-			printf("%c", password[i]);
+			printf("%c\n", password[i]);
 		}
 	}
 }
