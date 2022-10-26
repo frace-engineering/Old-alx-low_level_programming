@@ -10,26 +10,18 @@
  * Return: Always 0
  */
 
-int password_gen(int N);
-
-int main(void)
-{
-	password_gen(8);
-	return (0);
-}
-
-int password_gen(int N)
+int main(int N)
 {
 	int i = 0;
 
 	int random = 0;
 
 	srand((unsigned int)(time(NULL)));
+
 	char num[] = "0123456789";
 	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 	char ALPHA[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char symbole[] = "!@#$^&*?";
-
 	char password[N];
 
 	random = rand() % 4;
