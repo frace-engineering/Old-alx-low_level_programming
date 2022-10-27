@@ -6,7 +6,7 @@
  * Return: string
  */
 
-char *string_toupper(char *s)
+char *string_toupper(char *)
 {
 	char t[60];
 	int i;
