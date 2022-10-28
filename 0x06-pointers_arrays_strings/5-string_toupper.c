@@ -6,18 +6,16 @@
  * Return: string
  */
 
-char *string_toupper(char *)
+char *string_toupper(char *s)
 {
-	char t[60];
 	int i;
 
-	for (i = 0; t[i] != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (t[i] >= 'a' && t[i] <= 'z')
+		if (s[i] >= 'a' && s[i] <= 'z')
 		{
-			t[i] = t[i] - 32;
+			s[i] = s[i] - 32;
 		}
-		_putchar(t[i]);
 	}
-	return (0);
+	return (s);
 }
