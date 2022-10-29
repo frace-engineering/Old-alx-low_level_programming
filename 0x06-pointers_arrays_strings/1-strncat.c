@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * *_strncat - appends a determined number of  char from src string
@@ -12,13 +11,23 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	size_t len = strlen(dest);
-	size_t i;
+	int i;
+	int j;
+	int count = 0;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	for (i = 0; ; i++)
 	{
-		dest[len + i] = src[i];
+		if (dest[i] != '\0')
+		{
+			count++;
+		}
+		for (j = 0; j < n; j++)
+		{
+			dest[count + j] = src[j];
+		}
 	}
 	return (dest);
 }
+
+
 
