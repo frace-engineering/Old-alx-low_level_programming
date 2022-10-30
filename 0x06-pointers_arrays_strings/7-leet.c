@@ -13,13 +13,16 @@ char *leet(char *s)
 	char sc[] = {'A', 'E', 'O', 'T', 'L'};
 	char replace[] = {4, 3, 0, 7, 1};
 
-	while (s[i++] && j < 5)
+	while (s[i])
 	{
-		if (s[i] == sc[j] || s[i] - 32 == sc[j])
+		for (j = 0; j < 5; j++)
 		{
-			s[i] == replace[j];
+			if (s[i] == sc[j] || s[i] - 32 == sc[j])
+			{	
+				s[i] == replace[j];
+			}
 		}
-		j++;
+		i++;
 
 	}
 	return (s);
