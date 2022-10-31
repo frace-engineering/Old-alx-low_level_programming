@@ -35,5 +35,6 @@ int main(int num)
 			fflush(stdout)
 	fflush( stdout );
 	}
+	printf("\n");
 	return (0);
 }
