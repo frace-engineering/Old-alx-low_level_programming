@@ -18,18 +18,22 @@ int main(int num)
 		if ((num % 5 == 0) && (num % 3 == 0))
 		{
 			puts("FizzBuzz ");
+			fflush( stdout );
 		}
 		else if (num % 5 == 0)
 		{
 			puts("Buzz ");
+			fflush( stdout );
 		}
 		else if (num % 3 == 0)
 		{
 			puts("Fizz ");
+			fflush( stdout );
 		}
 		else
 			printf("%d ", num);
+			fflush(stdout)
+	fflush( stdout );
 	}
-	printf("\n");
 	return (0);
 }
