@@ -10,16 +10,7 @@
  *
  * Return: num
  */
-
-int fizz_buzz(int num);
-
-int main(void)
-{
-	int output = fizz_buzz(100);
-	return (0);
-}
-
-int fizz_buzz(int num)
+int main(int num)
 {
 	
 	for (num = 1; num <= 100; num++)
@@ -39,5 +30,6 @@ int fizz_buzz(int num)
 		else
 			printf("%d ", num);
 	}
+	printf("\n");
 	return (0);
 }
