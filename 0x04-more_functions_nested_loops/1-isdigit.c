@@ -8,9 +8,13 @@
  */
 int _isdigit(int c)
 {
-	if ((c >= 48) && (c <= 58))
+	int i;
+
+	if (('c' >= 48) && ('c' <= 58))
 	{
-		_putchar(c);
+		i = 1;
 	}
-	return (c);
+	else
+		i = 0;
+	return (i);
 }
