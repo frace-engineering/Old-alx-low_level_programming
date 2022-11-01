@@ -1,28 +1,19 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * *_memcpy - fills the pointed memory witha given character
- * @s: the number of times the character will be  registered
- * @c: the string to be worked on
+ * *_strchr - fills the pointed memory witha given character
+ * @s: pointer to char
+ * @c: character that is searched for
  *
- * Return: pointer
+ * Return: pointer to 1st instance of char or NULL if char is
+ * not found.
 */
 
 char *_strchr(char *s, char c)
 {
-	int i;
-	char *p;
+	char *pointer = strchr(s, (int) c);
 
-	while (s[i])
-	{
-		if (s[i] == c)
-		{
-			p = &c;
-		}
-		else 
-		p = NULL;
-		i++;
-	}
-	return (P);
+	return (Pointer);
 }
 
