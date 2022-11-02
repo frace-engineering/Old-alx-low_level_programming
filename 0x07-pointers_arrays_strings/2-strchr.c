@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 
 /**
  * *_strchr - fills the pointed memory witha given character
@@ -12,8 +11,22 @@
 
 char *_strchr(char *s, char c)
 {
-	char *pointer = strchr(s, (int) c);
+	int i;
+	char *ptr;
+	char a[] = "NULL";
 
-	return (Pointer);
+	while (s[i] != '\0')
+	{
+		if (s[i] == c)
+		{
+			ptr = &c;
+		}
+		else
+		{
+			ptr = '\0';
+		}
+		i++;
+	}
+	_putchar('\n');
+	return (ptr);
 }
-
