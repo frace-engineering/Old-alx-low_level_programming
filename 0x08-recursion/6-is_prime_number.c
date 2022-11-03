@@ -9,13 +9,19 @@ int is_prime_number(int n)
 {
 	if (n > 1)
 	{
-		if (n % (n - i) == 0)
+		int d;
+
+
+		if (d > 1 && d < n)
+		{	
+		if (n % d == 0)
 		{
 			return (1);
 		}
 		else
 		{
 			return (0);
+		}
 		}
 	}
 }
