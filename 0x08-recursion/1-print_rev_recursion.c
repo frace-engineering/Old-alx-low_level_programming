@@ -18,7 +18,7 @@ void _print_rev_recursion(char *s)
 	{
 		count += count;
 	}
-	for (count-- count > 0; count--)
+	for (count--; count > 0; count--)
 	{
 		_putchar(s[count]);
 	}
