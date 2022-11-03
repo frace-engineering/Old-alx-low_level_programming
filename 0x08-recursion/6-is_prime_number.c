@@ -8,13 +8,8 @@
 int is_prime_number(int n)
 {
 	if (n > 1)
-	{
-		int d;
-
-
-		if (d > 1 && d < n)
-		{	
-		if (n % d == 0)
+	{	
+		if (n % (n - 1) == 0)
 		{
 			return (1);
 		}
@@ -23,5 +18,6 @@ int is_prime_number(int n)
 			return (0);
 		}
 		}
+	is_prime_number(n -1)
 	}
 }
