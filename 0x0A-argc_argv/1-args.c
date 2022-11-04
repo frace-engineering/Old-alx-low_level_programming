@@ -7,7 +7,7 @@
  * @b: array of arguments
  * Return: Always 0 (Success)
  */
-int args_count(__attribute__((unused)) int a, char *b[])
+int args_count(int a, __attribute__((unused)) char *b[])
 {
 	printf("%d\n", a);
 	return (0);
