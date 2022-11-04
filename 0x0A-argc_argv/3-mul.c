@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * multiply_numbers - is s function that prints its name
+ * multiply2_numbers - is s function that prints its name
  * @a: number of elements in array b
  * @b: array of arguments
  * Return: Always 0 (Success)
