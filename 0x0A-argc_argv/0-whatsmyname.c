@@ -7,13 +7,14 @@
  * @b: array of arguments
  * Return: Always 0 (Success)
  */
-int myname(int a, char *b[])
+int myname(__attribute__((unused)) int argc, char *argv[])
 {
-	printf("%s\n", *b);
+	printf("%s\n", *argv);
 	return (0);
 }
 
 int main(int argc, char *argv[])
 {
 	myname(argc, argv);
+	return (0);
 }
