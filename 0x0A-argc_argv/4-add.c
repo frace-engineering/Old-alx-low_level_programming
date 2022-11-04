@@ -16,7 +16,14 @@ int add(__attribute__((unused)) int a, char *b[])
 
 	for (i = 1; i < a; i++)
 	{
-		sum += atoi(b[i]);
+		if (a == 1)
+		{
+			printf("0");
+		}
+		else
+		{
+			sum += atoi(b[i]);
+		}
 	}
 	printf("%d\n", sum);
 	return (0);
