@@ -7,7 +7,7 @@
  * @b: array of arguments
  * Return: Always 0 (Success)
  */
-int what_is_myname(int a, char *b[])
+int myname(int a, char *b[])
 {
 	printf("%s\n", *b);
 	return (0);
@@ -15,5 +15,5 @@ int what_is_myname(int a, char *b[])
 
 int main(int argc, char *argv[])
 {
-	what_is_myname(argc, argv);
+	myname(argc, argv);
 }

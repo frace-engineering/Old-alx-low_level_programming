@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * what_is_myname - is s function that prints its name
+ * arg_count - counts the number of arguments in a function
  * @a: number of elements in array b
  * @b: array of arguments
  * Return: Always 0 (Success)
@@ -15,5 +15,5 @@ int args_count(int a, char *b[])
 
 int main(int argc, char *argv[])
 {
-	what_is_myname(argc, argv);
+	args_count(argc, argv);
 }
