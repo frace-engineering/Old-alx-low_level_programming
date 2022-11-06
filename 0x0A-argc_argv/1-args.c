@@ -9,7 +9,7 @@
  */
 int args_count(int a, __attribute__((unused)) char *b[])
 {
-	printf("%d\n", a);
+	printf("%d\n", a - 1);
 	return (0);
 }
 /**
