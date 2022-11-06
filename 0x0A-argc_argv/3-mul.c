@@ -1,23 +1,23 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * multiply2_numbers - is s function that prints its name
  * @a: number of elements in array b
- * @b: array of arguments
+ * @cas: array of arguments
  * Return: Always 0 (Success)
  */
-int multiply2_numbers(int a, char *b[])
+int multiply2_numbers(int a, char *cas[])
 {
-	if (a <= 2)
+	if (a != 3)
 	{
-		printf("Error");
+		printf("Error\n");
+		return (1);
 	}
-	else if (a == 3)
+	else
 	{
-		printf("%d", *b[1] * (*b[2]));
+		printf("%d\n", atoi(cas[1]) * atoi(cas[2]));
 	}
-	printf("\n");
 	return (0);
 }
 /**
