@@ -26,6 +26,7 @@ char *_strdup(char *str)
 		num++;
 	}
 	return (ptr);
+	free(ptr);
 }
 
 
