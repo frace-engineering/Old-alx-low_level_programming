@@ -8,25 +8,29 @@
  * Return: Null if size = 0
  */
 
-char *create_array(unsigned int size, char c)
+char *create_array(unsigned int size, __attribute__((unused)) char c)
 {
-	unsigned int i;
+	char arr[] = "c";
 	char *ptr;
+	unsigned int i;
 
-	i = 0;
-	
-	ptr = malloc(sizeof(char) * size);
-	
-	if (size == 0)
+	ptr = arr;
+
+	malloc(sizeof(char) * size);
+
+	for (i = 0; i < size; i++)
 	{
+		if (size == 0)
+		{
+			return ('\0');
+		}
+		else 
+		{
+			_putchar(arr[i]);
+		}
 		return ('\0');
 	}
-	while (i < size)
-	{
-		_putchar(c);
-		i++;
-	}
-	return (ptr);
+	return (ptr);	
 }
 
 
