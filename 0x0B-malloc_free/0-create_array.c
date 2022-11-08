@@ -10,27 +10,21 @@
 
 char *create_array(unsigned int size, __attribute__((unused)) char c)
 {
-	char arr[] = "c";
 	char *ptr;
 	unsigned int i;
 
-	ptr = arr;
+	ptr = malloc(sizeof(*ptr) * size);
 
-	malloc(sizeof(char) * size);
-
-	for (i = 0; i < size; i++)
+	if (size == 0)
 	{
-		if (size == 0)
-		{
-			return ('\0');
-		}
-		else 
-		{
-			_putchar(arr[i]);
-		}
 		return ('\0');
 	}
-	return (ptr);	
+	while (i < size)
+	{
+		_putchar(c);
+		i++;
+	}
+	return (ptr);
 }
 
 
