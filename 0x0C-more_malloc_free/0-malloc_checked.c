@@ -10,12 +10,12 @@ void *malloc_checked(unsigned int b)
 {
 	char *ptr;
 
-	ptr = malloc(sizeof(*ptr) * b);
-
-	if (ptr == NULL)
+	ptr = malloc(sizeof*ptr * b);
+	if (ptr != NULL)
 	{
-		_putchar(b);
+		_putchar(*ptr);
 	}
+	return (NULL);
 }
 
 
