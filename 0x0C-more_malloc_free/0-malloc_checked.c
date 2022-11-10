@@ -10,10 +10,10 @@ void *malloc_checked(unsigned int b)
 {
 	char *ptr;
 
-	ptr = malloc(sizeof*ptr * b);
+	ptr = malloc(sizeof(*ptr) * b);
 	if (ptr != NULL)
 	{
-		_putchar(*ptr);
+		return (0);
 	}
 	return (NULL);
 }
