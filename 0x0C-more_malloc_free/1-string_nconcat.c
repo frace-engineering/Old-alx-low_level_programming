@@ -30,11 +30,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	if (s1[i] == '\0')
 	{
-		for (; j <= n; j++)
+		if (s2 != NULL)
 		{
-			_putchar(s2[j]);
+			while (s2[j] != '\0' && j < n)
+			{
+				_putchar(s2[j]);
+				j++;
+			}
 		}
-		_putchar('\0');
+		else
+		{
+			return (NULL);
+		}
+		_putchar('\n');
 	}
 	return (s1);
 }
