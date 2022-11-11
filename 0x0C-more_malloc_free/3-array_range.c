@@ -1,7 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 
-
+/**
+ * array_range - allocates memory for an  array of inegers
+ * @min: input minimun range
+ * @max: input maximum range
+ * Return: Always 0 on success
+ */
 
 int *array_range(int min, int max)
 {
