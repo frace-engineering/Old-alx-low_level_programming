@@ -11,28 +11,23 @@
 int *array_range(int min, int max)
 {
 	int *ptr;
-	size_t size;
-	int i, j;
+	int i;
 
-	size = 0;
 	if (min > max)
 	{
 		return (NULL);
 	}
-	for (i = min; i <= max; i++)
-	{
-		size++;
-	}
 
-
-	ptr = malloc(sizeof(*ptr) * size);
-	if (ptr == 0)
+	ptr = malloc(sizeof(*ptr) * (max - min + 1));
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	for (j = min; j <= max; j++)
+	while (min < max)
 	{
-		_putchar(ptr[j]);
+		ptr[i] = min;
+		i++;
+		min++;
 	}
 	return (ptr);
 }
