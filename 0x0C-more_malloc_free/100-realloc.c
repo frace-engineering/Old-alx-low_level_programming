@@ -1,7 +1,5 @@
-#include "notrebloh.h"
-#include <stdio.h>
+#include "main.h"
 #include <stdlib.h>
-#include <string.h>
 /**
  * *_realloc - reallocate memory size function
  * @ptr: pointer to address of old memory location
