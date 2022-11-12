@@ -24,11 +24,9 @@ int *array_range(int min, int max)
 		return (NULL);
 	}
 
-	i = 0;
-	while (min <= max)
+	for (i = 0; i < max - min; i++)
 	{
-		ptr[i] = min;
-		i++;
+		_putchar(ptr[i]);
 	}
 	return (ptr);
 }
