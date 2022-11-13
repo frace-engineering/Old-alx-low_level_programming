@@ -33,14 +33,14 @@ char *_strncat(char *dest, char *src, int n)
 	int destlen = _strlen(dest);
 	int srclen = _strlen(src);
 
-	if (src[srclen] >= n)
+	if (srclen >= n)
 	{
 		for (i = 0; i < n; i++)
-		{	
+		{
 			dest[destlen + 1] = src[i];
 		}
 	}
-	if (src[srclen] <= n)
+	if (srclen <= n)
 	{
 		for (i = 0; src[i] == '\0' || i == n; i++)
 		{
@@ -50,6 +50,3 @@ char *_strncat(char *dest, char *src, int n)
 	_putchar('\n');
 	return (dest);
 }
-
-
-
