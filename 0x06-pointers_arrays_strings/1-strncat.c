@@ -1,6 +1,23 @@
 #include "main.h"
 
 /**
+ * _strlen - calculates the number of characters in a string
+ * @s: input string
+ * Return: return the length
+ */
+int _strlen(char *s)
+{
+	int i;
+	int len = 0;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		len++;
+	}
+	return (len);
+}
+
+/**
  * *_strncat - appends a determined number of  char from src string
  * to destinating string without a NULL terminator
  * @dest: destination string
@@ -12,20 +29,14 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i;
-	int j;
-	int count = 0;
 
-	for (i = 0; ; i++)
+	int len = _strlen(dest);
+
+	for (i = 0; src[i] == '\0' || i == n; i++)
 	{
-		if (dest[i] != '\0')
-		{
-			count++;
-		}
-		for (j = 0; j < n; j++)
-		{
-			dest[count + j] = src[j];
-		}
+		dest[len + i] = src[i];
 	}
+	_putchar('\n');
 	return (dest);
 }
 
