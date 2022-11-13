@@ -1,4 +1,21 @@
 #include "main.h"
+/**
+ * _len - calculates the lenght of a string
+ * @s: input string
+ * Return: lenght of the string
+ */
+
+int _len(char *s)
+{
+	int i;
+	int len = 0;
+
+	for (i = 0; s[i] != 0; i++)
+	{
+		len++;
+	}
+	return (len);
+}
 
 /**
  * *_strcat - concatenates 2 strings
@@ -9,16 +26,14 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int i, j;
+	int i;
 
-	for (i = 0; dest[i] == '\0'; i++)
+	int destlen = _len(dest);
+
+	for (i = 0; src[i] == '\0'; i++)
 	{
-		_putchar(dest[i]);
+		dest[destlen + i] = src[i];
 	}
-	for (j = 0; src[j] == '\0'; i++)
-	{
-		_putchar(src[j]);
-	}
-	_putchar('\n');
+
 	return (dest);
 }
