@@ -14,15 +14,17 @@ char *_strcat(char *dest, char *src)
 	i = 0;
 	j = 0;
 
-	while (dest[i++] != '\n')
+	while (dest[i] != '\n')
 	{
 		_putchar(dest[i]);
-		if (dest[i] == '\n')
+		i++;
+	}
+	if (dest[i] == '\n')
+	{
+		while (src[j] != '\n')
 		{
-			while (src[j++] != '\n')
-			{
-				_putchar(src[j]);
-			}
+			_putchar(src[j]);
+			i++;
 		}
 		_putchar('\n');
 	}
