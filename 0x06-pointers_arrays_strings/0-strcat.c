@@ -29,10 +29,12 @@ char *_strcat(char *dest, char *src)
 	int i;
 
 	int destlen = _len(dest);
+	int srclen = _len(src);
 
-	for (i = 0; src[i] == '\0'; i++)
+	for (i = 0; i = srclen - 1; i++)
 	{
 		dest[destlen + i] = src[i];
 	}
+	dest[destlen + 1] = '\0';
 	return (dest);
 }
