@@ -1,22 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
-/**
- * _strlen - calculates the number of characters in a string
- * @s: input string
- * Return: return the length
- */
-int _strlen(char *s)
-{
-	int i;
-	int len = 0;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-		len++;
-	}
-	return (len);
-}
 
 /**
  * *_strcmp - compares two strings
@@ -26,26 +8,16 @@ int _strlen(char *s)
  */
 int _strcmp(char *s1, char *s2)
 {
-	int s1len = _strlen(s1);
 	int i;
 
-	char cmp;
-
-	for (i = 0; i < s1len; i++)
+	for (i = 0; s1[i] != '\0'; i++)
+		;
+	for (i = 0; s2[i] != '\0'; i++)
 	{
-		if (s1[i] == s2[i])
+		if (s1[i] != s2[i])
 		{
-			cmp = 0;
-		}
-		if (s1[i] < s2[i])
-		{
-			cmp = -1;
-		}
-		if (s1[i] > s2[i])
-		{
-			cmp = 1;
+			return (s1[i] - s2[i]);
 		}
 	}
-	return (cmp);
+	return (0);
 }
-
