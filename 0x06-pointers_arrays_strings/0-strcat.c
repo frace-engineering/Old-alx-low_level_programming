@@ -31,7 +31,7 @@ char *_strcat(char *dest, char *src)
 	int destlen = _len(dest);
 	int srclen = _len(src);
 
-	for (i = 0; i = srclen - 1; i++)
+	for (i = 0; i < srclen; i++)
 	{
 		dest[destlen + i] = src[i];
 	}
