@@ -7,7 +7,7 @@
  * @age: structure member 2
  * @owner: structure member 3
  */
-#define struct dog{
+#typedef struct dog{
 	char *name;
 	float age;
 	char *owner;
