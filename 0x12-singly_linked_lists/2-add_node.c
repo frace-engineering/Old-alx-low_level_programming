@@ -7,7 +7,7 @@
  * @str: parameter with the element str in
  * the structure
  *
- * Return: Return the head of the linked list
+ * Return: pointer to head node or NULL on failure
  */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -24,7 +24,5 @@ list_t *add_node(list_t **head, const char *str)
 	new->next = *head;
 	*head = new;
 
-	return (*head);
+	return (new);
 }
-Footer
-© 2022 GitHub, Inc.
