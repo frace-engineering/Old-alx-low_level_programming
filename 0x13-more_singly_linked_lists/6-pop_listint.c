@@ -3,7 +3,7 @@
  * pop_listint - deletes head node of a linked list
  * @head: pointer to head node
  *
- * Rreturn: n (head node data or 0 if emptyy string
+ * Return: n (head node data or 0 if emptyy string
  */
 
 
