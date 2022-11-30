@@ -16,27 +16,27 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	i = 0;
 
 	temp = *head;
-	while (!*head)
-		return (0);
-	while (temp->next != 0)
+	if (*head == NULL)
+		return (-1);
+	if (index == 0)
 	{
-		for (; i < index - 1; i++)
-		{
-			temp = temp->next;
-		}
-		del = temp->next;
-		del->next = temp->next;
-		free(del);
-		printf("%d : I am here\n", del->n);
-	}
-
-	if (del == 0)
-	{
-		exit(1);
+		*head = (*head)->next;
+		free(temp);
 	}
 	else
 	{
-		exit(-1);
+		while (i < index - 1)
+		{
+			temp = temp->next;
+			if (temp == NULL)
+				return (-1);
+			i++;
+		}
+		del = temp;
+		del = del->next;
+		temp->next = del->next;
+		free(del);
+		printf("%d : I am here\n", del->n);
 	}
-	return (0);
+	return (1);
 }
