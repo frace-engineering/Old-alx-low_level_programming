@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * delet_nodeint_at_index - deletes the node at the given index
+ * delete_nodeint_at_index - deletes the node at the given index
  * @head: pointer to head node
  * @index: given index
  *
@@ -9,29 +9,30 @@
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *ptr;
-	listint_t *new;
+	listint_t *temp;
+	listint_t *del;
 	unsigned int i;
 
 	i = 0;
 
-	ptr = *head;
-	
-	if (ptr == 0)
+	temp = *head;
+	while (!*head)
 		return (0);
-
-	while (i < index - 1)
+	while (temp->next != 0)
 	{
-		ptr = ptr->next;
-		i++;
+		for (; i < index - 1; i++)
+		{
+			temp = temp->next;
+		}
+		del = temp->next;
+		del->next = temp->next;
+		free(del);
+		printf("%d : I am here\n", del->n);
 	}
-	new = ptr->next;
-	ptr->next = new->next;
-	free(new);
 
-	if (new == 0)
+	if (del == 0)
 	{
-		 exit(1);
+		exit(1);
 	}
 	else
 	{
