@@ -16,7 +16,7 @@ int recursion(int x, int y)
 		return (-1);
 	if (y == 0)
 		return (1);
-	return (x * _pow_recursion(x, y - 1));
+	return (x * recursion(x, y - 1));
 }
 
 /**
@@ -35,7 +35,7 @@ void print_binary(unsigned long int n)
 		_putchar('0');
 	while (exp >= 0)
 	{
-		res_pow = _pow_recursion(2, exp);
+		res_pow = recursion(2, exp);
 		if (n >= res_pow)
 		{
 			_putchar('1');
